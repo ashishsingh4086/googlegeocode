@@ -37,13 +37,17 @@ class Geo extends Component {
     render(){
 
            return(
-                <div>
-                    <input onChange={this.getData}  />
-                    <ul>
+                <div className="card-block container">
+                    <p> Please enter an address </p>
+                    <input className="form-control" onChange={this.getData}  />
+                    <div className="card-block">
+                    <ul className="list-group">
                { this.state.address_component.map((comp)=>
                    <Address_Component value={comp}/>
+              
                )}
                </ul>
+                    </div>
                 </div>
 
       )

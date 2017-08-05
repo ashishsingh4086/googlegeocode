@@ -6,8 +6,8 @@ class Address_Component extends Component{
         return(
             <div>
      
-                <li>
-                {this.props.value.long_name}
+                <li className="list-group-item">
+                <strong>{this.props.value.types[0]} : </strong>{this.props.value.long_name}
                 </li>
                 </div>
 
