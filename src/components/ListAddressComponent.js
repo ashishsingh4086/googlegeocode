@@ -1,15 +1,15 @@
-import React ,{Component} from 'react';
+import React, { Component } from 'react';
 
 
-class Address_Component extends Component{
-    render(){
-        return(
+class Address_Component extends Component {
+    render() {
+        return (
             <div>
-     
+
                 <li className="list-group-item">
-                <strong>{this.props.value.types[0]} : </strong>{this.props.value.long_name}
+                    <strong>{this.props.value.types[0]} : </strong>{this.props.value.long_name}
                 </li>
-                </div>
+            </div>
 
         )
     }
